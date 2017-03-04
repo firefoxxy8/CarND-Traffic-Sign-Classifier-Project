@@ -16726,7 +16726,9 @@ Q3HFAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>I can see the model perform bad of out from previous dataset signs.</p>
+<p>I can see the model perform bad of out from previous dataset signs.
+The model predicted only 1 out of 5 signs correctly ( the right-of-way sign ) so it's 20% accurate in this case. In the test set the accuracy was 94%.
+Interesting the 90 Km/h sign is classified as traffic lights, maybe for the circular lines of the digits.</p>
 
 </div>
 </div>
@@ -16773,6 +16775,18 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>About on certainty of predictions</p>
+<p>All images shown above are new images gotten for the internet to test the performance of the model on unfamiliar images.
+Image 1:
+The model failed completely, maybe it handled the "7" digits as a left arrow
+Image 2:
+The model failed completely, I think it's all about the circular lines, quite similiar to the traffic lights sign
+Image 3:
+Right class of sign!ì with high score.
+Image 4:
+This was not in the previous dataset ok, but the classification was not so wrong, about the meaning of the sign. Good Job
+Image 5:
+Completely wrong, maybe the arrow a little rotated on the left made it classify it as turn left</p>
 
 </div>
 </div>
